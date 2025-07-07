@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/media-queries.css" />
+  </head>
+
+  <body id="home">
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div>
+        <img
+          src="assets/images/general/logo.png"
+          alt="My Logo"
+          class="my-logo"
+        />
+      </div>
+      <!-- Navbar -->
+      <nav class="nav" id="navbar">
+        <!-- Dropdown Menu -->
+        <i class="fas fa-bars"></i>
+        <i class="fa fa-times"></i>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" aria-label="home nav link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" aria-label="about nav link"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" aria-label="skills nav link"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" aria-label="projects nav link"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#education"
+              class="nav-link"
+              aria-label="education nav link"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#languages"
+              class="nav-link"
+              aria-label="languages nav link"
+              >Languages</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" aria-label="contact nav link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <div class="darkmode-toggle">
+          <input type="checkbox" id="darkmode-toggle" />
+          <label for="darkmode-toggle">
+            <svg
+              version="1.1"
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 496 496"
+              style="enable-background: new 0 0 496 496"
+              xml:space="preserve"
+            >
+              <rect
+                x="152.994"
+                y="58.921"
+                transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.9"
+                y="164.979"
+                transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.947"
+                y="315.048"
+                transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="164.966"
+                y="409.112"
+                transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                width="16"
+                height="39.999"
+              />
+
+              <rect
+                x="303.031"
+                y="421.036"
+                transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.088"
+                y="315.018"
+                transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.054"
+                y="165.011"
+                transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="315.001"
+                y="46.895"
+                transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                width="16"
+                height="39.999"
+              />
+              <path
+                d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+      c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+              />
+              <rect x="240" width="16" height="72" />
+              <rect
+                x="62.097"
+                y="90.096"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                width="71.999"
+                height="16"
+              />
+              <rect y="240" width="72" height="16" />
+
+              <rect
+                x="90.091"
+                y="361.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                width="16"
+                height="71.999"
+              />
+              <rect x="240" y="424" width="16" height="72" />
+
+              <rect
+                x="361.881"
+                y="389.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                width="71.999"
+                height="16"
+              />
+              <rect x="424" y="240" width="72" height="16" />
+              <rect
+                x="389.911"
+                y="62.091"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                width="16"
+                height="71.999"
+              />
+            </svg>
+            <svg
+              version="1.1"
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 49.739 49.739"
+              style="enable-background: new 0 0 49.739 49.739"
+              xml:space="preserve"
+            >
+              <path
+                d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+     c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+     c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+     C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+     c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+     c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+              />
+            </svg>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Intro Section -->
+      <section
+        class="intro"
+        id="welcome-section"
+        role="img"
+        aria-label="A workplace with a white keyboard, earphones, an Apple mouse, a notepad and a silver pen against the pink background"
+      >
+        <div class="intro-text">
+          <h2 class="intro-subtitle">Ilona Goldmane</h2>
+          <h1 class="intro-title">Web Developer & Designer</h1>
+        </div>
+        <div>
+          <a href="#projects" class="explore-btn btn-styled">explore my work</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <!-- Back to Top Button (visible on <=1200px screens) -->
+        <button
+          id="back-to-top"
+          class="back-to-top-btn"
+          aria-label="Back to top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        <div class="about-img section-img">
+          <img
+            src="assets/images/general/female-coder.png"
+            alt="cartoon female coder working on a PC"
+          />
+        </div>
+        <div class="about-content section-content">
+          <h3 class="about-title section-title">briefly about myself</h3>
+          <p class="about-text section-text">
+            My journey into web development began as a relaxing hobby — a
+            creative outlet to recharge after long days of teaching. Over time,
+            what started as a way to unwind grew into a true passion, inspiring
+            me to transition from education to technology.
+          </p>
+          <p class="about-text section-text">
+            I am driven by a desire to craft meaningful digital products that
+            combine creativity, empathy, and technical skill. Through web
+            development, I aim to empower others, solve real-world problems, and
+            bring fresh ideas to life. I am passionate about building
+            experiences that connect, inspire, and make a difference.
+          </p>
+          <p class="about-text section-text">
+            For this portfolio, I chose to build everything with HTML, CSS, and
+            JavaScript from scratch. I believe strong fundamentals are key, and
+            wanted to show that clean, responsive, and engaging websites can be
+            created without complex frameworks.
+          </p>
+          <p class="about-text section-text">
+            Curious about how I collaborate in a team? Check out my Red Panda
+            Squad project
+            <a href="https://red-panda-squad.netlify.app/" target="_blank"
+              >here</a
+            >
+            for more.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <span class="about-card-icon"
+                ><i class="fas fa-laptop-code"></i
+              ></span>
+              <h4 class="about-card-title">Developer</h4>
+              <p class="about-card-text">
+                Building modern, responsive websites and web apps
+              </p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon"
+                ><i class="fas fa-paint-brush"></i
+              ></span>
+              <h4 class="about-card-title">Designer</h4>
+              <p class="about-card-text">
+                Passionate about clean, user-friendly design
+              </p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon"
+                ><i class="fas fa-language"></i
+              ></span>
+              <h4 class="about-card-title">Multilingual</h4>
+              <p class="about-card-text">
+                Fluent in several languages and cultures
+              </p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon"><i class="fas fa-robot"></i></span>
+              <h4 class="about-card-title">AI Literate</h4>
+              <p class="about-card-text">
+                Embracing AI tools for smarter workflows
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <div class="skills-img section-img">
+          <img
+            src="assets/images/general/samurai.jpg"
+            alt="female samurai in a red outfit"
+          />
+        </div>
+        <div class="skills-content section-content">
+          <h3 class="skills-title section-title">my current skills</h3>
+          <div class="skills-list">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">Git/GitHub</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">Figma</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">UI/UX Design</div>
+            <div class="skill-card">TypeScript</div>
+            <div class="skill-card">Agile Methodology (Scrum)</div>
+            <div class="skill-card">React (basics)</div>
+            <div class="skill-card">SEO/Content Writing</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="projects section" id="projects">
+        <h3 class="section-title project-section-title">Featured Projects</h3>
+        <div class="featured-projects">
+          <!-- Project 1 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">Christmas Shop</h4>
+                <img
+                  src="assets/images/featured-projects/christmas-shop.png"
+                  alt="Landing Page of Christmas Shop"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a
+                    href="https://ilonagold.github.io/christmas-shop/"
+                    target="_blank"
+                    class="btn-styled"
+                    >Live site</a
+                  >
+                  <a
+                    href="https://github.com/ilonaGold/christmas-shop"
+                    target="_blank"
+                    class="btn-styled"
+                    >Code repo</a
+                  >
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  Festive Christmas-themed e-commerce website built with vanilla
+                  JavaScript, HTML5, and CSS3. Demonstrates the ability to
+                  translate Figma design specifications into a functional,
+                  interactive web application. Features responsive multi-page
+                  layout, dynamic product catalog with category filtering,
+                  interactive modal system, animated slider carousel, real-time
+                  countdown timer, and mobile-responsive burger menu. Showcases
+                  advanced CSS Grid/Flexbox layouts, smooth animations, and
+                  comprehensive JavaScript functionality including DOM
+                  manipulation, event handling, and local data management.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">Hangman Game</h4>
+                <img
+                  src="assets/images/featured-projects/hangman-main.png"
+                  alt="Interface of Hangman Game"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a
+                    href="https://ilonagold.github.io/hangman-game/"
+                    target="_blank"
+                    class="btn-styled"
+                    >Live site</a
+                  >
+                  <a
+                    href="https://github.com/ilonaGold/hangman-game"
+                    target="_blank"
+                    class="btn-styled"
+                    >Code repo</a
+                  >
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  Interactive Hangman Game built with vanilla JavaScript, HTML5,
+                  and CSS3. Features dynamic UI generation, canvas-based gallows
+                  drawing, virtual and physical keyboard support, hint system
+                  with programming-related questions I created myself, and
+                  responsive design. Both the design and functionality are
+                  implemented from scratch, showcasing advanced CSS techniques
+                  and JavaScript capabilities. Includes modal dialogs, game
+                  state management, and elegant animations. Fully playable on
+                  desktop and mobile devices with intuitive user experience and
+                  modern styling.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">Async Race</h4>
+                <img
+                  src="assets/images/featured-projects/garage.jpg"
+                  alt="Interface of the Garage Page of Async Race Game"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a
+                    href="https://ilonagold.github.io/async-race/"
+                    target="_blank"
+                    class="btn-styled"
+                    >Live site</a
+                  >
+                  <a
+                    href="https://github.com/ilonaGold/async-race"
+                    target="_blank"
+                    class="btn-styled"
+                    >Code repo</a
+                  >
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  A dynamic single-page racing game built with TypeScript
+                  featuring car management and real-time race animations.
+                  Includes a comprehensive Garage for creating, editing, and
+                  deleting cars with color customization, plus a Winners page
+                  tracking race statistics. Features asynchronous racing with
+                  smooth animations, responsive design, and complete CRUD
+                  operations via RESTful API. The application demonstrates
+                  modern web development practices with modular architecture and
+                  engaging user interactions.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
+          <!-- Project 4 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">E-Commerce Shop</h4>
+                <img
+                  src="assets/images/featured-projects/red-panda-login.png"
+                  alt="Plush Red Panda as a Single Product of E-commerce Shop"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a href="#" target="_blank" class="btn-styled">Demo live</a>
+                  <a href="#" target="_blank" class="btn-styled">About team</a>
+                  <a
+                    href="https://github.com/ilonaGold/eCommerce"
+                    target="_blank"
+                    class="btn-styled"
+                    >Code repo</a
+                  >
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  This is a team project for Rolling Scope School's Frontend
+                  Programme in which I contributed to concept, layout, design,
+                  branding, centralized navigation, catalog product list,
+                  interactive product cards, shopping cart implementation,
+                  pagination, API integration for customer updates, address
+                  management, user password change and profile edit
+                  functionality and wrote unit tests using Vitest. I also
+                  prepared comprehensive ReadMe documentation, and was the Team
+                  Lead. CommerceTools integration was available for a limited
+                  time, so a demo site is provided as an alternative to the live
+                  site.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- <a href="#" class="more-projects-link btn-styled">More projects</a> -->
+        <p class="other-work">
+          Curious how I prototype in Figma? Check out my Chat App concept
+          <a
+            href="https://www.figma.com/proto/TPwkotx7jt28vq8SHn5zN7/Practice--Chat-App-Homepage-Design?node-id=107-17&t=DUVWelk6IfGgtBGn-1"
+            target="_blank"
+            rel="noopener"
+          >
+            here.
+          </a>
+        </p>
+      </section>
+
+      <!-- Education Section -->
+      <section class="education section" id="education">
+        <div class="education-img section-img">
+          <img
+            src="assets/images/general/granny.jpg"
+            alt="crazy granny in a pink outfit learning to skateboard"
+          />
+        </div>
+        <div class="education-content section-content">
+          <h3 class="education-title section-title">
+            Education & Certifications
+          </h3>
+          <div class="education-list">
+            <div class="education-card">
+              <div class="education-card-title">
+                <a href="https://rs.school" target="_blank">React 2025 Q3</a>
+              </div>
+              <div class="education-card-detail">
+                The Rolling Scopes School - in progress
+              </div>
+            </div>
+            <div class="education-card">
+              <div class="education-card-title">
+                <a
+                  href="https://app.rs.school/certificate/quvq68d6"
+                  target="_blank"
+                  >JS/FE COURSE EN 2024Q4 (JAVASCRIPT)</a
+                >
+              </div>
+              <div class="education-card-detail">
+                The Rolling Scopes School - completed in 2025
+              </div>
+            </div>
+            <div class="education-card">
+              <div class="education-card-title">
+                <a
+                  href="https://www.freecodecamp.org/certification/fcc_username/responsive-web-design"
+                  target="_blank"
+                  >Responsive Web Design</a
+                >
+              </div>
+              <div class="education-card-detail">
+                freeCodeCamp - completed in 2024
+              </div>
+            </div>
+            <!-- <div class="education-card">
+              <div class="education-card-title">
+                <a href="https://learnui.design/" target="_blank"
+                  >Learn UI Design</a
+                >
+              </div>
+              <div class="education-card-detail">Completed in 2021</div>
+            </div> -->
+            <div class="education-card">
+              <div class="education-card-title">
+                <a href="https://shegoestech.lv/" target="_blank"
+                  >She Goes Tech - Java (100H)</a
+                >
+              </div>
+              <div class="education-card-detail">
+                Accenture - completed in 2020
+              </div>
+            </div>
+            <div class="education-card">
+              <div class="education-card-title">MA in English Philology</div>
+              <div class="education-card-detail">University of Latvia</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages Section -->
+      <section class="languages section" id="languages">
+        <div class="languages-img section-img">
+          <img
+            src="assets/images/general/languages.png"
+            alt="poster with welcome greetings in different langauges"
+          />
+        </div>
+        <div class="languages-content section-content">
+          <h3 class="languages-title section-title">my command of languages</h3>
+          <div class="languages-list">
+            <div class="language-card">English (proficient)</div>
+            <div class="language-card">Russian (proficient)</div>
+            <div class="language-card">Latvian (advanced)</div>
+            <div class="language-card">Italian (elementary)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <h3 class="contact-section-title section-title">
+          Let's bring your ideas to life!
+        </h3>
+        <div class="contact-content">
+          <div class="contact-img">
+            <img
+              src="assets/images/general/contact.png"
+              alt="female in a business suit without her head shown with a business card in her hand"
+            />
+            <ul class="contact-social">
+              <li class="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/ilona-goldmane/"
+                  target="_blank"
+                  aria-label="linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="email">
+                <a
+                  href="mailto:goldmane.ilona@gmail.com"
+                  target="_blank"
+                  aria-label="email"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+              <li class="twitter">
+                <a
+                  href="https://twitter.com/Goldilla_Codes"
+                  target="_blank"
+                  aria-label="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form class="contact-form" method="POST" netlify>
+              <h4>Get in touch</h4>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea name="message" placeholder="Message"></textarea>
+              <button class="button-cta" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-copyright">
+        &copy; <span class="accent"> iLonaDev </span
+        ><span class="accent" id="footer-year"></span>
+      </p>
+      <p>Building experiences</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <!-- Modal for Featured Projects -->
+    <div class="project-modal" id="project-modal">
+      <div class="project-modal-content">
+        <span class="project-modal-close" id="project-modal-close"
+          >&times;</span
+        >
+        <img id="project-modal-img" src="" alt="Project image" />
+      </div>
+    </div>
+  </body>
+</html>
