@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Modal for featured project images
+
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("project-modal");
   const modalImg = document.getElementById("project-modal-img");
@@ -96,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Dynamically update the footer year
+
 document.addEventListener("DOMContentLoaded", function () {
   const yearSpan = document.getElementById("footer-year");
   if (yearSpan) {
@@ -104,35 +106,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Back to Top button functionality with scroll and nav-link click
+
 function handleBackToTopBtn() {
   const btn = document.getElementById("back-to-top");
   if (!btn) return;
 
-  // Show/hide on scroll
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > window.innerHeight * 0.5) {
-      btn.style.display = "flex";
-    } else {
-      btn.style.display = "none";
+  // Get Intro Section's bottom position
+  const introSection = document.querySelector(".intro");
+  function updateBtnVisibility() {
+    let showBtn = false;
+    if (window.innerWidth <= 1200 && introSection) {
+      // Show button only after user scrolls past the bottom of the Intro Section
+      const introBottom = introSection.offsetTop + introSection.offsetHeight;
+      if (window.scrollY >= introBottom) {
+        showBtn = true;
+      }
     }
-  });
+    btn.style.display = showBtn ? "flex" : "none";
+  }
 
-  // Show on nav-link click (dropdown menu)
+  window.addEventListener("scroll", updateBtnVisibility);
+  window.addEventListener("resize", updateBtnVisibility);
+
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", function () {
-      setTimeout(() => {
-        if (window.scrollY > window.innerHeight * 0.5) {
-          btn.style.display = "flex";
-        } else {
-          btn.style.display = "none";
-        }
-      }, 400); // Wait for scroll
+      setTimeout(updateBtnVisibility, 400);
     });
   });
 
   btn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  // Initial check
+  updateBtnVisibility();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
