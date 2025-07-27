@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio Site</title>
+    <title>Portfolio | Web Dev & Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/media-queries.css" />
+    <link rel="icon" href="./assets/images/general/favicon.png" />
   </head>
 
   <body id="home">
@@ -335,9 +336,9 @@
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">UI/UX Design</div>
             <div class="skill-card">TypeScript</div>
-            <div class="skill-card">Agile Methodology (Scrum)</div>
+            <div class="skill-card">SEO/Copywriting</div>
             <div class="skill-card">React (basics)</div>
-            <div class="skill-card">SEO/Content Writing</div>
+            <div class="skill-card">Agile Methodology (Jira)</div>
           </div>
         </div>
       </section>
@@ -347,6 +348,57 @@
         <h3 class="section-title project-section-title">Featured Projects</h3>
         <div class="featured-projects">
           <!-- Project 1 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">Steve Jobs & Buttons</h4>
+                <img
+                  src="assets/images/featured-projects/jobs-buttons.png"
+                  alt="Tribute to Steve Jobs"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a
+                    href="https://ilonagold.github.io/steve-jobs-and-buttons/"
+                    target="_blank"
+                    class="btn-styled"
+                    >Live Site</a
+                  >
+                  <a
+                    href="https://github.com/ilonaGold/steve-jobs-and-buttons"
+                    target="_blank"
+                    class="btn-styled"
+                    >Code repo</a
+                  >
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  A tribute to Steve Jobs, one of my first projects as a web
+                  developer and designer. The project showcases my ability to
+                  design engaging layouts and implement interactive features
+                  using HTML5 and CSS3 with minimal JavaScript. Features a
+                  variety of custom-styled buttons, smooth transitions, and
+                  responsive design. All visual elements and functionality are
+                  built from scratch, reflecting attention to detail and a
+                  strong grasp of web fundamentals. If you click on the buttons,
+                  you will be able to see both the interactive features in
+                  action and another tribute page to Jobs made as one of the
+                  projects for freeCodeCamp's
+                  <a
+                    href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                    target="_blank"
+                    >Responsive Web Design</a
+                  >
+                  certification.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
           <article class="project-tile flip-card">
             <div class="flip-card_inner">
               <div class="flip-card_front-side">
@@ -389,7 +441,7 @@
               </div>
             </div>
           </article>
-          <!-- Project 2 -->
+          <!-- Project 3 -->
           <article class="project-tile flip-card">
             <div class="flip-card_inner">
               <div class="flip-card_front-side">
@@ -432,11 +484,11 @@
               </div>
             </div>
           </article>
-          <!-- Project 3 -->
+          <!-- Project 4 -->
           <article class="project-tile flip-card">
             <div class="flip-card_inner">
               <div class="flip-card_front-side">
-                <h4 class="project-title">Async Race</h4>
+                <h4 class="project-title">Async Race Game</h4>
                 <img
                   src="assets/images/featured-projects/garage.jpg"
                   alt="Interface of the Garage Page of Async Race Game"
@@ -469,13 +521,14 @@
                   operations via RESTful API. A custom animated loader ensures a
                   pleasing user experience while waiting for API responses, even
                   during longer load times when the mock API server (hosted on
-                  Render.com's free tier) experiences cold starts.
+                  Render.com's free tier) experiences cold starts. Please stay
+                  patient while the cars are warming up their engines :)
                 </p>
                 <button class="back-btn btn-styled">Back</button>
               </div>
             </div>
           </article>
-          <!-- Project 4 -->
+          <!-- Project 5 -->
           <article class="project-tile flip-card">
             <div class="flip-card_inner">
               <div class="flip-card_front-side">
@@ -491,7 +544,7 @@
                     href="https://www.youtube.com/watch?v=saubrB33dXc"
                     target="_blank"
                     class="btn-styled"
-                    >Demo live</a
+                    >Live demo</a
                   >
                   <a
                     href="https://red-panda-squad.netlify.app/about"
@@ -537,6 +590,45 @@
               </div>
             </div>
           </article>
+          <!-- Project 6 -->
+          <article class="project-tile flip-card">
+            <div class="flip-card_inner">
+              <div class="flip-card_front-side">
+                <h4 class="project-title">Spotify Music Explorer</h4>
+                <img
+                  src="assets/images/featured-projects/music-explorer.png"
+                  alt="Music Explorer App"
+                  class="project-img"
+                />
+                <a href="#" class="project-info-btn btn-styled">Read more</a>
+                <p class="project-links">
+                  <a
+                    href="https://www.youtube.com/watch?v=saubrB33dXc"
+                    target="_blank"
+                    class="btn-styled"
+                    >Live Site</a
+                  >
+                  <a href="#" target="_blank" class="btn-styled">Code repo</a>
+                </p>
+              </div>
+              <div class="flip-card_back-side">
+                <p class="flip-card_back-side-text">
+                  A music discovery app that allows users to explore artists,
+                  albums, and tracks. Users can search for their favorite music,
+                  create playlists, and discover new artists based on their
+                  listening history. The app features a sleek, modern design
+                  with smooth animations and transitions. It utilizes the
+                  Spotify API to fetch and display music data. The app is fully
+                  responsive, ensuring a seamless experience across all devices.
+                  Built with React (using class components) and CSS3. This
+                  demonstrates my ability to work with legacy React codebases.
+                  In the future, I plan to create projects using React function
+                  components and hooks to further expand my skills.
+                </p>
+                <button class="back-btn btn-styled">Back</button>
+              </div>
+            </div>
+          </article>
         </div>
         <!-- <a href="#" class="more-projects-link btn-styled">More projects</a> -->
         <p class="other-work">
@@ -566,10 +658,14 @@
           <div class="education-list">
             <div class="education-card">
               <div class="education-card-title">
-                <a href="https://rs.school" target="_blank">React 2025 Q3</a>
+                <a
+                  href="https://www.freecodecamp.org/learn/full-stack-developer/"
+                  target="_blank"
+                  >Certified Full Stack Developer Curriculum</a
+                >
               </div>
               <div class="education-card-detail">
-                The Rolling Scopes School - in progress
+                freeCodeCamp - in progress
               </div>
             </div>
             <div class="education-card">
@@ -587,7 +683,7 @@
             <div class="education-card">
               <div class="education-card-title">
                 <a
-                  href="https://www.freecodecamp.org/certification/fcc_username/responsive-web-design"
+                  href="https://www.freecodecamp.org/certification/iLonaDev/responsive-web-design"
                   target="_blank"
                   >Responsive Web Design</a
                 >
