@@ -1,0 +1,588 @@
+/* ====================
+DESKTOP (1024px - 1439px)
+========================*/
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .featured-projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .section {
+    padding: 5rem 3rem 3rem;
+  }
+}
+
+/* ====================
+TABLET AND BELOW (max-width: 1200px)
+========================*/
+@media (max-width: 1200px) {
+  .section {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 4rem 1rem 3rem;
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .about-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-text {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+  .about-cards,
+  .featured-projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .back-to-top-btn {
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1002;
+  }
+}
+
+/* ====================
+SMALL DESKTOP & TABLET (max-width: 1024px)
+========================*/
+@media (max-width: 1024px) {
+  .about-cards,
+  .featured-projects {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+/* ====================
+MID-SIZE SCREENS (max-width: 1440px and min-width: 480px)
+========================*/
+@media (max-width: 1440px) and (min-width: 480px) {
+  .section {
+    padding: 5rem 4rem 3rem;
+  }
+  .about-cards,
+  .featured-projects {
+    gap: 2.5rem;
+  }
+}
+
+/* ====================
+TABLET PORTRAIT & SMALL LAPTOPS (480px - 767px)
+========================*/
+@media (max-width: 767px) and (min-width: 480px) {
+  /* Section improvements - minimal padding */
+  .section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 0.5rem 2.5rem;
+    text-align: center;
+  }
+
+  /* Consistent title styling */
+  .section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  /* About section - wider text */
+  .about-text {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+
+  /* Grid layouts - title, image, content order */
+  .about-cards,
+  .featured-projects {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    order: 3;
+  }
+
+  /* Skills section - centered image */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-img {
+    order: 2;
+    align-self: center;
+    margin: 1rem 0;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    order: 3;
+  }
+
+  .contact {
+    height: auto;
+    min-height: 100vh;
+    padding: 8rem 0.5rem 4rem;
+  }
+
+  .contact .section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .contact-img {
+    position: relative;
+    order: 1;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .contact-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+
+  .contact-social {
+    position: absolute;
+    top: 46%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+
+  .contact-social a {
+    font-size: 2.2rem;
+    color: var(--purple);
+    transition: all 0.3s ease;
+  }
+
+  .contact-social a:hover {
+    color: var(--gold);
+    transform: scale(1.1);
+  }
+
+  .contact-form-container {
+    order: 2;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .contact-form {
+    padding: 2rem;
+    border-radius: 15px;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .contact-form textarea {
+    height: 12rem;
+    min-height: 10rem;
+    resize: vertical;
+  }
+}
+
+/* ====================
+MOBILE LANDSCAPE & LARGE PHONES (375px - 479px)
+========================*/
+@media (max-width: 479px) and (min-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  .section {
+    padding: 3rem 0.3rem 2rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .section-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  /* About section - wider content */
+  .about-text {
+    max-width: 99%;
+    margin: 0 auto;
+    padding: 0 0.2rem;
+  }
+
+  .about-cards,
+  .skills-list,
+  .education-list,
+  .languages-list,
+  .featured-projects {
+    gap: 1.5rem;
+    order: 3;
+  }
+
+  /* Skills section - centered image */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-img {
+    order: 2;
+    align-self: center;
+    margin: 1rem 0;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    order: 3;
+  }
+
+  /* Contact - same size image and form */
+  .contact {
+    padding: 6rem 0.3rem 3rem;
+    min-height: 90vh;
+  }
+
+  .contact .section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-content {
+    gap: 2.5rem;
+    max-width: 320px;
+  }
+
+  .contact-img {
+    max-width: 320px;
+  }
+
+  .contact-img img {
+    padding: 1rem;
+  }
+
+  .contact-social {
+    top: 46%;
+    left: 37%;
+    gap: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .contact-social a {
+    font-size: 2rem;
+  }
+
+  .contact-form-container {
+    max-width: 320px;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+    min-height: 350px;
+  }
+
+  .contact-form textarea {
+    height: 10rem;
+  }
+}
+
+/* ====================
+MOBILE PORTRAIT (max-width: 374px)
+========================*/
+@media (max-width: 374px) {
+  html {
+    font-size: 52%;
+  }
+
+  .section {
+    padding: 2.5rem 0.2rem 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .section-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  /* About section - maximum width */
+  .about-text {
+    max-width: 99.5%;
+    margin: 0 auto;
+    padding: 0 0.1rem;
+  }
+
+  .about-cards,
+  .skills-list,
+  .education-list,
+  .languages-list,
+  .featured-projects {
+    gap: 1rem;
+    order: 3;
+  }
+
+  /* Skills section - centered image */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-img {
+    order: 2;
+    align-self: center;
+    margin: 1rem 0;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+    order: 3;
+  }
+
+  /* Contact - same size image and form */
+  .contact {
+    padding: 5rem 0.2rem 2.5rem;
+    min-height: 85vh;
+  }
+
+  .contact .section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+    max-width: 280px;
+  }
+
+  .contact-img {
+    max-width: 280px;
+  }
+
+  .contact-img img {
+    padding: 0.8rem;
+  }
+
+  .contact-social {
+    top: 46%;
+    left: 37%;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .contact-social a {
+    font-size: 1.8rem;
+  }
+
+  .contact-form-container {
+    max-width: 280px;
+  }
+
+  .contact-form {
+    padding: 1.2rem;
+    min-height: 300px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.4rem;
+  }
+
+  .contact-form textarea {
+    height: 8rem;
+  }
+
+  .back-to-top-btn {
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* ====================
+SHORT SCREENS (max-height: 800px)
+Improved handling for landscape phones and short screens
+========================*/
+@media (max-height: 800px) {
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .contact {
+    min-height: 95vh;
+    padding-top: 4rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+  }
+
+  .contact-img {
+    max-width: 240px;
+  }
+
+  .contact-img img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: 1rem;
+  }
+
+  .contact-form {
+    min-height: 280px;
+  }
+
+  .contact-form textarea {
+    height: 8rem;
+  }
+
+  .back-to-top-btn {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* ====================
+EXTRA SHORT SCREENS (max-height: 600px)
+For landscape phones and very short screens
+========================*/
+@media (max-height: 600px) {
+  .section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .contact {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+  }
+
+  .contact-img {
+    order: 1;
+    max-width: 200px;
+    flex-shrink: 0;
+  }
+
+  .contact-img img {
+    aspect-ratio: 1;
+    padding: 0.8rem;
+  }
+
+  .contact-social {
+    top: 50%;
+    left: 50%;
+    gap: 0.8rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .contact-social a {
+    font-size: 1.6rem;
+  }
+
+  .contact-form-container {
+    order: 2;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .contact-form {
+    padding: 1rem;
+    min-height: 250px;
+  }
+
+  .contact-form textarea {
+    height: 6rem;
+  }
+}
